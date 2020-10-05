@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width: 500px;
+				height: 500px;
+				border: 1px solid black;
+				margin: 50px auto;
+				position: relative;
+			}
+			.box div{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+			}
+			.box .red{
+				background: red;
+				left: 0;
+				top: 0;
+			}
+			.box .blue{
+				background: blue;
+				left: 400px;
+				top: 0;
+			}
+			.box .green{
+				background: green;
+				left: 0;
+				top: 400px;
+			}
+			.box .yellow{
+				background: yellow;
+				top: 400px;
+				left: 400px;
+			}
+		</style>
+		<script src="animation.js"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="red"></div>
+			<div class="blue"></div>
+			<div class="green"></div>
+			<div class="yellow"></div>
+		</div>
+	</body>
+</html>

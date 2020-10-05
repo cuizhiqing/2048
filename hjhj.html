@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			var txt = prompt("请输入字符串");
+			String.prototype.temp = function(a, bb, cc) {
+				var c = "";
+				var tex2 = "";
+				if(a > this.length) {
+					return -1;
+				}
+				if(cc != null) {
+					if(Array.prototype.isPrototypeOf(cc)) {
+						cc = cc.join("");
+					}else if(){
+						
+					}
+					for(var i = a; i < a + bb; i++) {
+						alert("opop");
+						c += this[i];
+					}
+				} else if(bb != null) {
+					for(var i = a; i < a + bb; i++) {
+						c += this[i];
+					}
+				} else {
+					for(var i = a; i < this.length; i++) {
+						c += this[i];
+					}
+				}
+				var oo = this.split("").slice(0, a).join("");
+				var pp = this.split("").splice(a + bb).join("")
+				tex2 = cc != null ? tex2 + oo + cc + pp : bb != null ? tex2 + oo + pp : tex2 + oo;
+				console.log(this);
+				console.log(oo);
+				console.log(pp);
+				return c + "----" + tex2;
+			};
+			console.log(txt.temp(2));
+
+			//			var arr=[1,2,3];
+			//			arr1=arr.splice(2,0);
+			//			console.log(arr1);//[]
+		</script>
+	</body>
+
+</html>
